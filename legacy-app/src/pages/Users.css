@@ -1,0 +1,23 @@
+.users-page {
+  max-width: 1200px;
+}
+
+.users-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.users-toolbar-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.field-error {
+  display: block;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+}
