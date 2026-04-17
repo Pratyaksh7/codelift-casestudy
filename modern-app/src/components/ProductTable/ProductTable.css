@@ -1,0 +1,117 @@
+.products-page__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.products-page__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+
+.products-page__table th,
+.products-page__table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.products-page__table th {
+  background-color: var(--surface-header-bg);
+  font-weight: 500;
+  color: var(--text-table-head);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.products-page__table tbody tr:hover {
+  background-color: var(--surface-alt);
+}
+
+.products-page__empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px;
+}
+
+.products-page__name-cell {
+  font-weight: 500;
+  color: var(--text-strong);
+}
+
+.products-page__category-pill {
+  background-color: var(--surface-alt);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--text-body);
+}
+
+.products-page__stock {
+  color: var(--text-body);
+  font-weight: 400;
+}
+
+.products-page__stock--low {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.products-page__low-label {
+  color: #e74c3c;
+  font-size: 11px;
+  margin-left: 6px;
+}
+
+/* Buttons (shared across Products page components) */
+.products-page__btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.products-page__btn--primary {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.products-page__btn--primary:hover {
+  background-color: #3a7bc8;
+}
+
+.products-page__btn--danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.products-page__btn--danger:hover {
+  background-color: #c0392b;
+}
+
+.products-page__btn--cancel {
+  background: #eee;
+  color: #555;
+}
+
+.products-page__btn--sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.products-page__row-btn {
+  margin-right: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .products-page__btn--cancel {
+    background: #2e303a;
+    color: #e2e8f0;
+  }
+}
